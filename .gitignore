@@ -1,0 +1,33 @@
+node_modules
+dist
+.env
+.env.local
+.wrangler
+*.tsbuildinfo
+.DS_Store
+.superpowers
+.mcp.json
+.npmrc
+
+# tsc strays from pre-noEmit era (see apps/web/tsconfig.json)
+apps/web/src/**/*.js
+apps/web/src/**/*.js.map
+apps/web/src/**/*.d.ts
+apps/web/src/**/*.d.ts.map
+
+.vercel
+.env*.local
+
+# Internal Claude Code state
+.claude/
+# Local-only strategic notes (z.html etc)
+z.html
+# Internal handoff / strategy / cleanup docs — never publish
+# deliverables/ is a working directory for client-facing documents; it is
+# untracked on purpose, and this repo is public, so `git add -A` must not
+# be able to sweep it in.
+deliverables/
+HANDOFF.md
+agentroom-research-report.html
+agent_room_cleanup.md
+dist-mcpb
